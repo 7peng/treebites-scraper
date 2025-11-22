@@ -1,0 +1,144 @@
+.t-Form-fieldContainer--floatingLabel .t-Form-label, .t-Form-fieldContainer--floatingLabel.is-active .t-Form-label, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no .t-Form-label, .t-Form-label{
+color: rgba(0,0,0,.8); 
+font-weight : bold;
+}
+/*
+.t-Form-fieldContainer--floatingLabel .t-Form-label, .t-Form-fieldContainer--floatingLabel.is-active .t-Form-label, .t-Form-fieldContainer--floatingLabel.apex-item-wrapper--yes-no .t-Form-label, .t-Form-fieldContainer--floatingLabel.js-show-label .t-Form-label, .t-Form-radioLabel, .t-Form-inputContainer .radio_group label, .t-Form-checkboxLabel, .t-Form-inputContainer .checkbox_group label, .t-Form-label{
+color: rgba(0,0,0,.8); 
+font-weight : bold;
+}*/
+
+.t-Form-fieldContainer--floatingLabel .t-Form-inputContainer .apex-item-display-only{
+border-color: white;
+}
+
+.is-pending {
+    /*color: #ff9500;*/
+    /*color: #E98300;*/
+    color: #d76a27!important;
+}
+.is-closed {
+    color: #3baa2c;
+}
+.is-holding {
+    color: #fc0;
+}
+.is-open {
+    color:#FBCE4A!important;
+}
+.is-cancelled {
+    color: #f44336!important;
+}
+.is-unknown {
+    color: #928b81!important;
+}
+
+.hidden {
+    display: none;
+}
+
+.t-Button,.a-Button {
+    font-weight: 550;
+}
+.apex-rds a {
+    font-weight: 550;
+}
+
+/*
+.t-Report-cell, .t-Report-colHead {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+}*/
+
+.apex_report_break {
+   /* background-color: #f1e8c7!important;*/
+  background-color: #dcd4b5!important;
+   /* font-weight: bold; d2c295
+    padding: 8px 12px;*/
+    border: 1px solid lightgrey;
+  /*  font-size: 12px;*/
+}
+
+.a-GV-controlBreakHeader {
+    background-color: #dcd4b5!important;
+   /* font-weight: bold;
+    padding: 8px 12px;*/
+    border: 1px solid lightgrey;
+  /*  font-size: 12px;*/
+}
+
+/*
+.t-Body-contentInner{max-width:1366px}
+@media (max-width:1366px){.t-Body-contentInner{max-width:100%}}
+*/
+
+.t-Tabs-link {
+    font-weight: 550;
+    background-color: #dad7cb;
+}
+
+.t-Tabs-item.is-active .t-Tabs-link {
+    box-shadow: 0 -2px 0 #8c1515 inset;
+    background-color: #ffffff;
+    color: inherit;
+}
+
+.t-Region .a-TreeView-node--topLevel .a-TreeView-row.is-current, .t-Region .a-TreeView-node--topLevel .a-TreeView-row.is-selected, .t-Region .a-TreeView-node--topLevel .a-TreeView-row.is-current--top.is-selected {
+    background-color: #dad7cb;
+font
+}
+
+@media (max-width: 768 px) {
+    .a-Menu .t-MegaMenu-item {
+        border-left-width: 0;
+        border-top: 1px solid rgba(0,0,0,.1);
+        grid-column: 1;
+        grid-column-end: none;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+.a-GV {
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.a-PopupLOV-results table tr:hover,
+.a-PopupLOV-results .a-GV-table tr.is-selected .a-GV-cell{
+background:#f4e8e8;
+cursor: pointer;
+}
+
+.t-Report-colHead {
+  background-color: #00000026;
+ /* background-color: #D4D1CD;*/
+}
+
+.rep_no_data {  display: none;}
+
+.t-WizardSteps-step.is-active .t-WizardSteps-marker {
+    background-color: #d76a27!important;
+}
+
+.t-AVPList--leftAligned .t-AVPList-label {
+    font-weight: 550;
+}
+
+.su-home-page-card{
+    background-color: #006B81;
+}
+
+.tag-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 2px 4px 2px 0;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 1px 1px -1px rgba(0, 0, 0, .05), 0 0 0 1px rgba(0, 0, 0, .075) inset;
+}
+.u-RTL .tag-badge {
+  margin: 2px 0 2px 4px;
+}

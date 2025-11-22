@@ -1,0 +1,664 @@
+ 
+@charset "UTF-8";
+
+/** Source Sans 3, Source Serif 4, Roboto Slab, Roboto Mono (regular only) from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@300;400;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+@font-face {
+    font-family: "Stanford";
+    src: url("https://www-media.stanford.edu/assets/fonts/stanford.woff") format("woff"), url("https://www-media.stanford.edu/assets/fonts/stanford.ttf") format("truetype");
+    font-weight: 300;
+    font-display: swap;
+}
+ 
+/* Variables */
+.a-Button {
+    --a-button-type-background-color: #007c92;
+    --a-button-type-text-color: #fff;
+    --a-button-hover-background-color: #2f2424;
+    --a-button-active-background-color: #2f2424;
+    --a-button-focus-background-color: #2f2424;
+    min-height: 44px;
+}
+
+/* Web Accessbility */
+:focus {
+    outline: initial !important;
+    outline-width: 2px !important;
+    outline-style: solid !important;
+}
+
+.t-Body-mainContent :focus {
+    outline-color: #2D716F !important;
+}
+
+/* Responsive */
+@media (max-width: 979.98px) {
+
+    .col-1,
+    .col-10,
+    .col-11,
+    .col-12,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9 {
+        max-width: 100%;
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+    .t-Body-contentInner>.container>.row>.col.col-start,
+    .t-Body-contentInner>.container>.row>.col.col-end {
+        padding: 0 5px;
+    }
+
+    input#P0_SEARCH {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 639px) {
+    .row {
+        -webkit-margin-end: var(--ut-grid-gutter-width, 0);
+        margin-inline-end: var(--ut-grid-gutter-width, 0);
+        -webkit-margin-start: var(--ut-grid-gutter-width, 0);
+        margin-inline-start: var(--ut-grid-gutter-width, 0);
+    }
+
+    .row .col.col-start {
+        -webkit-padding-start: var(--ut-grid-gutter-width, 0);
+        padding-inline-start: var(--ut-grid-gutter-width, 0)
+    }
+
+    .row .col.col-end {
+        -webkit-padding-end: var(--ut-grid-gutter-width, 0);
+        padding-inline-end: var(--ut-grid-gutter-width, 0)
+    }
+}
+
+/* Landing Page Logo Image */
+.t-Body-contentInner .col-8 .margin-top-lg.margin-bottom-lg .u-textCenter img {
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Body */
+.t-Body-mainContent {
+    background: #f4f4f4;
+}
+
+
+ /* Header Logo */
+h1.logo-text,
+.logo-text {
+  font-family: Stanford, "Source Serif 4", "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.logo-directory{
+    font-family: "Source Sans 3", "Source Sans Pro";
+}
+h1.logo-text,
+.logo-text {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+
+.t-Header-logo img {
+    width: 215px;
+}
+
+
+ .t-Header-logo .logo-container,
+ .t-Header-logo .logo-container a {
+     color: #fff;
+ }
+
+ .t-Header-logo .logo-wordmark {
+     font-family: Stanford, "Source Serif 4", "Source Serif Pro", Georgia, Times, "Times New Roman", serif;
+     margin: 0 8px 0 0;
+     padding: 5px 8px 0 0;
+     font-size: 2em;
+     font-weight: 400;
+     border-right: 1px solid #fff;
+     height: 26px;
+ }
+
+ .t-Header-logo .logo-text {
+     font-family: "Source Sans 3", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+     font-weight: 400;
+     font-size: 1.2rem;
+     margin: 11px 0 0 0;
+     float: none;
+ }
+
+ @media (max-width: 768px) {
+     .t-Header-logo img {
+         display: block;
+         width: 75px !important;
+         height: 25px;
+         object-fit: cover;
+         object-position: -3px -9px;
+         margin: -3px 0 -5px -5px;
+     }
+
+     .t-Header-logo .logo-container {
+         display: block;
+     }
+
+     .t-Header-logo .logo-wordmark {
+         display: block;
+         margin: 0 0 0 1px;
+         padding: 0;
+         height: auto;
+         font-size: 1.3em;
+         margin-bottom: -5px;
+         border: none;
+     }
+
+     .t-Header-logo .logo-text {
+         display: block;
+         margin: 0;
+         padding: 0;
+         font-size: 0.95em;
+         border: none;
+         float: none;
+     }
+ }
+
+@media (max-width: 768px) {
+    .t-Header-logo img {
+        display: block;
+        width: 75px !important;
+        height: 25px;
+        object-fit: cover;
+        object-position: -3px -9px;
+        margin: -3px 0 -5px -5px;
+    }
+
+    .t-Header-logo .logo-container {
+        display: block;
+    }
+}
+
+/* Header Tab Navigation */
+.t-NavTabs {
+    background: #fff;
+}
+
+.t-Body-fullContent {
+    background: #fff;
+    border-bottom: 1px solid #A4A3A1;
+}
+
+.t-Body-fullContent .t-NavTabs {
+    box-shadow: none;
+}
+
+.t-NavTabs-link:hover:before {
+    background: #b6b1a9;
+}
+
+.t-NavTabs-item.is-active .t-NavTabs-link:hover:before {
+    background: #8c1515;
+}
+.t-NavTabs .t-NavTabs-link:focus {
+    --ut-navtabs-item-highlight-color: #7F7776;
+}
+
+  .t-NavTabs :focus {
+    background: #D4D1D1;
+    color: #000;
+    outline: 0 !important;
+}
+
+
+/* Footer */
+.t-Footer {
+    position: relative;
+    background: #b1040e;
+    gap: unset;
+}
+
+.t-Footer-apex {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -25px;
+}
+
+.t-Footer-top {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #D4D1D1;
+}
+
+.t-Footer-top:hover {
+    background: #F4F4F4;
+}
+
+.t-Footer-topButton {
+    width: 48px;
+    height: 48px;
+    align-items: start;
+    justify-content: left;
+}
+
+.t-Footer-top .a-Icon.icon-up-chevron:before {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* Stanford Global Footer */
+#global-footer {
+    max-width: 100vw;
+    box-sizing: border-box;
+    box-shadow: none;
+}
+
+#global-footer .container {
+    padding: 3px 0 20px 0 !important;
+    box-shadow: none !important;
+    color: #fff !important;
+}
+
+#global-footer a {
+    color: #fff !important;
+}
+
+#global-footer img {
+    max-width: 120px;
+}
+
+#global-footer .top-links {
+    margin-top: 0;
+}
+
+#global-footer .top-links li {
+    font-size: 17px;
+    font-weight: 600;
+    list-style: none;
+}
+
+#global-footer .bottom-links {
+    margin-top: 0;
+}
+
+#global-footer .bottom-links li {
+    font-size: 16px;
+    list-style: none;
+}
+
+@media (min-width: 768px) {
+    #global-footer ul {
+        width: auto;
+        float: none;
+    }
+
+    #global-footer #copyright {
+        font-size: 15px;
+        margin: 0 12px 0 220px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    #global-footer .container .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #global-footer #bottom-logo,
+    #global-footer #copyright {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #global-footer #bottom-menu {
+        width: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #global-footer #bottom-menu {
+        float: none;
+        width: 420px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #global-footer .top-links {
+        float: left;
+        text-align: left;
+        margin-left: 10%;
+        margin-right: 0;
+    }
+
+    #global-footer .bottom-links {
+        float: left;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 5%;
+    }
+
+    #global-footer .top-links li {
+        font-size: 15px;
+        font-weight: 400;
+        width: 170px;
+        padding-top: .25em;
+        padding-bottom: .25em;
+    }
+
+    #global-footer .bottom-links li {
+        font-size: 15px;
+        font-weight: 400;
+        width: 150px;
+        padding-top: .25em;
+        padding-bottom: .25em;
+    }
+
+    #global-footer #copyright {
+        font-size: 15px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Search Box */
+@media (max-width: 768px) {
+
+    #search-person,
+    #search-results-cr {
+        padding: 0 15px;
+    }
+}
+
+input#P4_DIRECTORY_SEARCH,
+input#P24_DIRECTORY_SEARCH {
+    max-width: calc(100% - 120px);
+}
+
+@media (max-width: 979.98px) {
+
+    input#P4_DIRECTORY_SEARCH,
+    input#P24_DIRECTORY_SEARCH {
+        margin-left: 7px;
+        max-width: calc(100% - 127px);
+    }
+}
+
+input#P4_DIRECTORY_SEARCH+.apex-item-icon,
+input#P24_DIRECTORY_SEARCH+.apex-item-icon {
+    height: 44px;
+}
+
+.a-Icon.icon-search:before {
+    content: "\e022";
+    font-size: 14px;
+}
+
+/* Search Results */
+.t-Body-contentInner>.container>.row {
+    margin-bottom: 20px;
+}
+
+.t-Body-contentInner .t-Button {
+    background: #007c92;
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+.t-Body-contentInner .t-Button:hover,
+.t-Body-contentInner .t-Button:focus {
+    background: #2f2424;
+    color: #fff;
+}
+
+.t-Body-contentInner .t-Button:focus {
+    outline: solid 2px #161513 !important;
+}
+
+ .t-Region-headerItems--buttons .t-Button {
+    margin-bottom: 0;
+}
+
+.t-ContentRow .t-ContentRow-iconWrap img {
+    object-position: 50% 25% !important;
+    object-fit: cover !important;
+    width: 70px !important;
+    max-width: 70px !important;
+    height: 70px !important;
+}
+
+#searchBtn {
+    height: 44px;
+    padding-top: 5% !important;
+}
+
+#resetBtn {
+    height: 44px;
+    padding-top: 5% !important;
+    padding-right: 40% !important;
+    padding-left: 15% !important;
+}
+
+@media (max-width: 768.98px) {
+    td.pagination {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Search Filters */
+.apex-item-checkbox input+label,
+.apex-item-radio input+label,
+.apex-item-single-checkbox input+label,
+label.u-checkbox,
+label.u-radio {
+    font-size: 14px;
+}
+
+/* Individual Profile */
+h2.t-Region-title {
+    font-size: 1.1rem;
+}
+
+.t-ContentRow-item {
+    padding: 5px 0;
+}
+
+.t-ContentRow-item .apex-icons-fontapex .fa,
+.t-ContentRow-item .t-ContentRow-avatar .fa {
+    margin-top: 2px;
+}
+
+.t-ContentRow-content a:hover {
+    color: #00548f;
+    text-decoration: underline;
+}
+
+.c-HeroCard .srp {
+    display: inline;
+    font-size: 16px;
+    margin-bottom: 0.25em;
+}
+
+.c-HeroCard .a-CardView-media--cover {
+    margin: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.c-HeroCard .a-CardView-media--cover .a-CardView-mediaImg {
+    width: 100%;
+    border-radius: 0;
+}
+
+.c-HeroCard .a-CardView-iconImg {
+    object-position: 50% 25%;
+}
+
+.c-HeroCard .a-CardView-header .a-CardView-title {
+    font-size: 24px;
+    line-height: 1.5em;
+    font-weight: 700;
+    margin: 0;
+}
+
+ 
+.t-ContentRow-item {
+    padding: 5px 0;
+}
+
+.t-ContentRow-item .apex-icons-fontapex .fa,
+.t-ContentRow-item .t-ContentRow-avatar .fa {
+    margin-top: 2px;
+}
+
+.t-ContentRow-content a:hover {
+    color: #00548f;
+    text-decoration: underline;
+}
+
+ 
+.c-HeroCard .a-CardView-iconWrap--top {
+    margin-top: 0;
+}
+
+@media (max-width: 979.98px) {
+    .c-HeroCard .a-CardView-iconImg {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .c-HeroCard .a-CardView-headerBody {
+        clear: both;
+        margin: 0;
+        text-align: center;
+    }
+
+    .c-HeroCard .a-CardView-media--cover .a-CardView-mediaImg {
+        height: 120px;
+    }
+}
+
+/* Individual Profile - Left Sidebar */
+.col-4 .t-Region--hideHeader .t-ContentRow-title {
+    font-size: 14px;
+    color: #585856;
+}
+
+.col-4 .t-Region--hideHeader .t-ContentRow-description {
+    font-size: 16px;
+    color: #161513;
+}
+
+.t-Region--scrollBody>.t-Region-headerItems,
+.t-Region--scrollBody>.t-Region-header>.t-Region-headerItems {
+    padding: 1rem 1rem 0 1rem;
+}
+
+.t-Region-title h4 {
+    margin-top: 0;
+}
+
+/* Individual Profile - Roles at Stanford */
+#roles-at-stanford_TemplateComponent {
+    padding: 1rem;
+}
+
+/* Slack Icon */
+.slack-icon:before {
+    filter: opacity(0.6);
+}
+
+/* Org Chart */
+hr {
+    box-sizing: border-box;
+    border: 0 none transparent;
+    border-top: 1px solid #000;
+}
+
+button[title~="Scroll"] .fa {
+    background: #fff;
+}
+
+.a-CardView-iconImg {
+    object-position: 50% 25% !important;
+}
+
+.a-CardView-header .a-CardView-title {
+    font-size: 16px;
+    line-height: 1.3em;
+    font-weight: 600;
+    margin: 0.5em 0;
+}
+
+/* Org Chart - Profile Link */
+.vprofile {
+    position: absolute;
+    height: 95px;
+    width: 95px;
+    border-radius: var(--a-cv-icon-image-border-radius, var(--a-cv-icon-border-radius, 100%));
+    margin: 0 !important;
+    top: 16px !important;
+    left: 18px !important;
+    right: 0;
+    bottom: 0;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1rem !important;
+    cursor: pointer;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.vprofile:hover {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Org Chart - Direct Report Badge */
+.a-CardView-badge {
+    font-size: 12px !important;
+    z-index: 100;
+}
+
+/* Alert */
+.t-Alert-body,
+.t-Alert-body span {
+    line-height: 1.3em
+}
+
+/* Header Logo */
+.t-Header-logo img {
+    width: 215px;
+}
+
+@media (max-width: 370px) {
+#bottom-menu .top-links
+{
+margin-left:10px !important;
+}
+}
+
+#global-footer .bottom-links {
+        margin-left: initial !important;
+    }

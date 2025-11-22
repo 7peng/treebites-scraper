@@ -1,0 +1,23 @@
+apex.dialog.registerHandlers([
+{
+"action":"init",
+"ids":["MODAL_DIALOG"]
+,"code":function(pPageUrl,pTitle,pHeight,pWidth,pMaxWidth,pIsModal,pDialogCssClasses,dialogAttributes,pDialog,pPageCssClasses,pTriggeringElement){apex.theme42.dialog(pPageUrl,{title:pTitle,h:pHeight,w:pWidth,mxw:pMaxWidth,modal:pIsModal,dialog:pDialog,dlgCls:'t-Dialog-page--standard '+pDialogCssClasses,dialogAttributes},pPageCssClasses,pTriggeringElement)}
+},
+{
+"action":"init",
+"ids":["WIZARD_MODAL_DIALOG"]
+,"code":function(pPageUrl,pTitle,pHeight,pWidth,pMaxWidth,pIsModal,pDialogCssClasses,dialogAttributes,pDialog,pPageCssClasses,pTriggeringElement){apex.theme42.dialog(pPageUrl,{title:pTitle,h:pHeight,w:pWidth,mxw:pMaxWidth,modal:pIsModal,dialog:pDialog,dlgCls:'t-Dialog-page--wizard '+pDialogCssClasses,dialogAttributes},pPageCssClasses,pTriggeringElement)}
+},
+{
+"action":"init",
+"ids":["DRAWER"]
+,"code":function(pPageUrl,pTitle,pHeight,pWidth,pMaxWidth,pIsModal,pDialogCssClasses,dialogAttributes,pDialog,pPageCssClasses,pTriggeringElement){apex.theme42.dialog(pPageUrl,{title:pTitle,w:pWidth,mxw:pMaxWidth,modal:pIsModal,dialog:pDialog,dlgCls:'t-Drawer-page--standard '+pDialogCssClasses,dialogAttributes},pPageCssClasses,pTriggeringElement)}
+},
+{
+"action":"close",
+"ids":["DRAWER","MODAL_DIALOG","WIZARD_MODAL_DIALOG"]
+,"code":function(pIsModal,pTarget){apex.theme42.dialog.close(pIsModal,pTarget)}
+}]);
+apex.dialog.registerAttributes([
+]);

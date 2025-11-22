@@ -1,0 +1,45 @@
+
+.apex-logo-img:focus,.t-Header-logo-link:focus
+{
+    background-color: #a0000d !important;
+}
+.apex-logo-img:hover,.t-Header-logo-link:hover
+{
+    background-color: #a0000d !important;
+}
+.apex-logo-img:focus-visible,.t-Header-logo-link:focus-visible
+{
+    background-color: #a0000d !important;
+}
+
+#global-footer a:focus,#global-footer a:focus-visible
+{
+    background-color: #a0000d !important;
+}
+.apex-logo-img{
+float:left;
+}
+
+.t-Header-logo img {
+    width: 90px !important;
+    margin-left: -6px;
+}
+
+.logo-text {
+    position: relative;
+    float: right;
+    top: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    font-weight: 200;
+}
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+ .logo-text {
+    margin-right: 10px; 
+    font-family: 'Arial, sans-serif'; /* Change font family */
+  }
